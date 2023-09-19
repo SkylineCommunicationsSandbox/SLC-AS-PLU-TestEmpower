@@ -1,4 +1,4 @@
-/*
+﻿/*
 ****************************************************************************
 *  Copyright (c) 2023,  Skyline Communications NV  All Rights Reserved.    *
 ****************************************************************************
@@ -51,15 +51,13 @@ DATE		VERSION		AUTHOR			COMMENTS
 
 namespace SLC_AS_PLU_TestEmpower_1
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.Text;
-	using Skyline.DataMiner.Automation;
-	
-	/// <summary>
-	/// Represents a DataMiner Automation script.
-	/// </summary>
+    using Empower.Library.Room0;
+
+    using Skyline.DataMiner.Automation;
+
+    /// <summary>
+    /// Represents a DataMiner Automation script.
+    /// </summary>
 	public class Script
 	{
 		/// <summary>
@@ -69,6 +67,8 @@ namespace SLC_AS_PLU_TestEmpower_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hello World 123!");
-		}
+            var order = OrderFactory.CreateOrder("World domination ಠ‿ಠ");
+			order.Dispatch("Joske Vermeulen");
+        }
 	}
 }
