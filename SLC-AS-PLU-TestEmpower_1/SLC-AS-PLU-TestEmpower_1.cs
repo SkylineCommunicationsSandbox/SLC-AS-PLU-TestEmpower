@@ -67,7 +67,7 @@ namespace SLC_AS_PLU_TestEmpower_1
 		public void Run(IEngine engine)
 		{
 			engine.GenerateInformation("Hello World 123!");
-            var order = OrderFactory.CreateOrder("World domination ಠ‿ಠ");
+            var order = OrderFactory.CreateOrder("JansChange World domination ಠ‿ಠ");
 			order.Dispatch("Joske Vermeulen");
         }
 	}
